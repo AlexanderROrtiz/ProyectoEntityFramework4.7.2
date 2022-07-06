@@ -1,0 +1,13 @@
+D:\Proyectos.Net\ProyectoEntityFramework\ProyectoEntityFramework\bin\Debug\ProyectoEntityFramework.exe.config
+D:\Proyectos.Net\ProyectoEntityFramework\ProyectoEntityFramework\bin\Debug\ProyectoEntityFramework.exe
+D:\Proyectos.Net\ProyectoEntityFramework\ProyectoEntityFramework\bin\Debug\ProyectoEntityFramework.pdb
+D:\Proyectos.Net\ProyectoEntityFramework\ProyectoEntityFramework\bin\Debug\EntityFramework.dll
+D:\Proyectos.Net\ProyectoEntityFramework\ProyectoEntityFramework\bin\Debug\EntityFramework.SqlServer.dll
+D:\Proyectos.Net\ProyectoEntityFramework\ProyectoEntityFramework\bin\Debug\EntityFramework.xml
+D:\Proyectos.Net\ProyectoEntityFramework\ProyectoEntityFramework\bin\Debug\EntityFramework.SqlServer.xml
+D:\Proyectos.Net\ProyectoEntityFramework\ProyectoEntityFramework\obj\Debug\ProyectoEntityFramework.csproj.AssemblyReference.cache
+D:\Proyectos.Net\ProyectoEntityFramework\ProyectoEntityFramework\obj\Debug\ProyectoEntityFramework.csproj.SuggestedBindingRedirects.cache
+D:\Proyectos.Net\ProyectoEntityFramework\ProyectoEntityFramework\obj\Debug\ProyectoEntityFramework.csproj.CoreCompileInputs.cache
+D:\Proyectos.Net\ProyectoEntityFramework\ProyectoEntityFramework\obj\Debug\ProyectoEntityFramework.csproj.CopyComplete
+D:\Proyectos.Net\ProyectoEntityFramework\ProyectoEntityFramework\obj\Debug\ProyectoEntityFramework.exe
+D:\Proyectos.Net\ProyectoEntityFramework\ProyectoEntityFramework\obj\Debug\ProyectoEntityFramework.pdb

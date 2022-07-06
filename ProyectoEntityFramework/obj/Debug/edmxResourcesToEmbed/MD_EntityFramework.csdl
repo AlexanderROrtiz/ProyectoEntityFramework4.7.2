@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ProyectoEntityFrameworkModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Tbl_Personas">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="edad" Type="Int32" />
+    <Property Name="idSexo" Type="Int32" />
+    <NavigationProperty Name="Tbl_Sexo" Relationship="Self.FK_Tbl_Personas_Tbl_Sexo" FromRole="Tbl_Personas" ToRole="Tbl_Sexo" />
+  </EntityType>
+  <EntityType Name="Tbl_Sexo">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Tbl_Personas" Relationship="Self.FK_Tbl_Personas_Tbl_Sexo" FromRole="Tbl_Sexo" ToRole="Tbl_Personas" />
+  </EntityType>
+  <Association Name="FK_Tbl_Personas_Tbl_Sexo">
+    <End Role="Tbl_Sexo" Type="Self.Tbl_Sexo" Multiplicity="0..1" />
+    <End Role="Tbl_Personas" Type="Self.Tbl_Personas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tbl_Sexo">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Tbl_Personas">
+        <PropertyRef Name="idSexo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ProyectoEntityFrameworkEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Tbl_Personas" EntityType="Self.Tbl_Personas" />
+    <EntitySet Name="Tbl_Sexo" EntityType="Self.Tbl_Sexo" />
+    <AssociationSet Name="FK_Tbl_Personas_Tbl_Sexo" Association="Self.FK_Tbl_Personas_Tbl_Sexo">
+      <End Role="Tbl_Sexo" EntitySet="Tbl_Sexo" />
+      <End Role="Tbl_Personas" EntitySet="Tbl_Personas" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
